@@ -1,0 +1,10 @@
+1. idlj -fall EchoApp.idl
+2. javac EchoApp/*
+3. jar cvf a.jar EchoApp/*.class
+4. javac -classpath a.jar *.java
+5. orbd -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+6. java Server -ORBInitialPort 1050 -ORBInitialHost localhost
+
+7. java Client -ORBInitialPort 1050 -ORBInitialHost localhost
